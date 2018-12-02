@@ -1,0 +1,4 @@
+dnf remove xorg-x11-drv-nouveau
+/etc/default/grub -> xdg.force_integrated=1 modprobe.blacklist=nouveau
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
