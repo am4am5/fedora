@@ -1,0 +1,1 @@
+echo 'blacklist kvm-intel' >> /etc/modprobe.d/blacklist.conf
