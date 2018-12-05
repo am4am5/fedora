@@ -12,3 +12,4 @@ BRIDGE=br0
 echo 1 > /proc/sys/net/ipv4/conf/wlp3s0/proxy_arp
 
 systemctl restart NetworkManager
+systemctl restart libvirtd
