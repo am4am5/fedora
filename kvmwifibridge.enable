@@ -1,14 +1,4 @@
-/etc/sysconfig/network-scripts/ifcfg-br0
-DEVICE=br0
-TYPE=Bridge
-BOOTPROTO=dhcp
-ONBOOT=yes
-DELAY=0
-
-/etc/sysconfig/network-scripts/ifcfg-<wifi>
-BRIDGE=br0 
-#BOOTPROTO=dhcp
-
+echo 1 > /proc/sys/net/ipv4/conf/virbr0/proxy_arp
 echo 1 > /proc/sys/net/ipv4/conf/wlp3s0/proxy_arp
 
 systemctl restart NetworkManager
