@@ -1,1 +1,1 @@
-dnf remove httpd* glusterfs*
+dnf remove httpd* glusterfs* geolite2*
