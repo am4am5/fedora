@@ -1,5 +1,7 @@
-echo 1 > /proc/sys/net/ipv4/conf/virbr0/proxy_arp
-echo 1 > /proc/sys/net/ipv4/conf/wlp3s0/proxy_arp
+echo "net.ipv4.conf.all.proxy_arp=1" >> /etc/sysctl.conf
+echo "net.ipv4.conf.default.proxy_arp=1" >> /etc/sysctl.conf
+echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+sysctl -p
 
 systemctl restart NetworkManager
 systemctl restart libvirtd
