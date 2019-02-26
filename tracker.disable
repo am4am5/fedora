@@ -1,0 +1,11 @@
+https://www.putorius.net/disable-tracker-on-fedora-29.html
+
+
+cd ~/.config/autostart
+cp -v /etc/xdg/autostart/tracker* .
+for FILE in $(ls tracker*); do echo "Hidden=true" >> $FILE; done
+
+tracker daemon -k
+rm -rf ~/.cache/tracker ~/.local/share/tracker
+
+ps -ef | grep -i tracker
