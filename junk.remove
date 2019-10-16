@@ -1,1 +1,1 @@
-sudo dnf remove httpd* geolite2*
+sudo dnf remove httpd* geolite2* dleyna-server
