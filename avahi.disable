@@ -1,5 +1,3 @@
-systemctl stop avahi-daemon
-systemctl disable avahi-daemon
+sudo systemctl disable --now avahi-daemon
 
-systemctl stop avahi-daemon.socket
-systemctl disable avahi-daemon.socket
+sudo systemctl disable --now avahi-daemon.socket
