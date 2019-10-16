@@ -1,1 +1,1 @@
-dnf remove httpd* glusterfs* geolite2*
+sudo dnf remove httpd* geolite2*
