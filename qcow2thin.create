@@ -1,1 +1,0 @@
-qemu-img create -f qcow2 fedora1.qcow2 10G
