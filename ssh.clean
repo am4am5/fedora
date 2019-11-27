@@ -1,0 +1,7 @@
+ssh:
+ssh-keygen -H  -F <hostname or IP address>
+ssh-keygen -R <hostname or IP address>
+nano .ssh/known_hosts
+
+cockpit:
+nano /etc/ssh/ssh_known_hosts
