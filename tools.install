@@ -1,1 +1,1 @@
-dnf install nano ncdu htop pciutils transmission git docker-ce ansible
+dnf install nano ncdu htop
