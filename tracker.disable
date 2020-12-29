@@ -1,11 +1,9 @@
-cd ~/.config/autostart
-cp -v /etc/xdg/autostart/tracker* .
-for FILE in $(ls tracker*); do echo "Hidden=true" >> $FILE; done
+cd ~/.config/autostart && cp -v /etc/xdg/autostart/tracker* . && for FILE in $(ls tracker*); do echo "Hidden=true" >> $FILE; done
 
-tracker daemon -k
-rm -rf ~/.cache/tracker ~/.local/share/tracker
+tracker daemon -k && rm -rf ~/.cache/tracker ~/.local/share/tracker
 
 ps -ef | grep -i tracker
 
-
 find / -name tracker* | xargs chmod -x
+
+mv /usr/share/dbus-1/services/*Tracker* /root/
