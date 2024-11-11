@@ -1,0 +1,6 @@
+nano /etc/cockpit/cockpit.conf
+
+[WebService]
+AllowMultiHost=yes
+
+systemctl restart cockpit.socket
