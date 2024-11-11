@@ -1,3 +1,4 @@
 systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
+sudo -u gdm dbus-run-session gsettings list-recursively org.gnome.settings-daemon.plugins.power | grep sleep
 sudo -u gdm dbus-run-session gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
